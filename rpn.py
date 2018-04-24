@@ -606,7 +606,7 @@ with tf.device('/cpu:0'):
              print(acc2)
              print("loss2=",loss2)
         
-         if  loss< 0.001 :
+         if  loss2<0.001 :
              saver.save(sess, "Model/model.ckpt",global_step=m)
 
 
